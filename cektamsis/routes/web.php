@@ -14,6 +14,12 @@ Route::get('dashboard', function () {
 Route::get('/tentang', function () {
     return Inertia::render('Tentang');
 });
+Route::get('/fitur', function () {
+    return Inertia::render('Fitur');
+});
+Route::get('/kontak', function () {
+    return Inertia::render('Kontak');
+});
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
